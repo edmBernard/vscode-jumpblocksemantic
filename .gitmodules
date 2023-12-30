@@ -1,0 +1,9 @@
+[submodule "third-party/tree-sitter"]
+	path = third-party/tree-sitter
+	url = https://github.com/tree-sitter/tree-sitter
+[submodule "third-party/tree-sitter-cpp"]
+	path = third-party/tree-sitter-cpp
+	url = https://github.com/tree-sitter/tree-sitter-cpp
+[submodule "third-party/tree-sitter-python"]
+	path = third-party/tree-sitter-python
+	url = https://github.com/tree-sitter/tree-sitter-python
