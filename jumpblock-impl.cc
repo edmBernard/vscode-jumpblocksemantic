@@ -67,6 +67,19 @@ void moveOut(TSNode& node) {
       return;
     }
   }
+
+  // in python if/for statement of one line block have three levels on the same position
+  // if_statement > block > expression_statement > call
+  // so we need 2 extra parent search
+  TSNode parentParentNode = ts_node_parent(parentNode);
+  if (!ts_node_is_null(parentParentNode)) {
+    TSNode parentParentParentNode = ts_node_parent(parentParentNode);
+    if (!ts_node_is_null(parentParentParentNode)) {
+      node = parentParentParentNode;
+      return;
+    }
+    return;
+  }
 }
 
 void moveUp(TSNode& node) {
