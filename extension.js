@@ -38,8 +38,8 @@ function jump(direction)
 {
     const editor = vscode.window.activeTextEditor;
     const document = editor.document;
-    const position = editor.selection.active;
-    const anchor = editor.selection.anchor;
+    const position = editor.selection.start;
+    const anchor = editor.selection.end;
 
     var point = {};
     var selectionStart = {};
