@@ -62,6 +62,9 @@ Ex.
 
 ## Release Notes
 
-### 0.0.1
+### 0.0.2
+- Add Zig support
+- Update dependencies
 
-Initial push of JumpBlockSemantic
+### 0.0.1
+- Initial push of JumpBlockSemantic

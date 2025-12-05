@@ -7,3 +7,6 @@
 [submodule "third-party/tree-sitter-python"]
 	path = third-party/tree-sitter-python
 	url = https://github.com/tree-sitter/tree-sitter-python
+[submodule "third-party/tree-sitter-zig"]
+	path = third-party/tree-sitter-zig
+	url = https://github.com/tree-sitter-grammars/tree-sitter-zig

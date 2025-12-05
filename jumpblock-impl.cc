@@ -11,6 +11,7 @@ extern "C" {
 // implemented by the `tree-sitter-cpp` library.
 const TSLanguage *tree_sitter_cpp(void);
 const TSLanguage *tree_sitter_python(void);
+const TSLanguage *tree_sitter_zig(void);
 }
 
 namespace fs = std::filesystem;
@@ -142,8 +143,10 @@ Napi::Object JumpOut(const Napi::CallbackInfo &info) {
     ts_parser_set_language(parser, tree_sitter_cpp());
   } else if (languageId == "python") {
     ts_parser_set_language(parser, tree_sitter_python());
+  } else if (languageId == "zig") {
+    ts_parser_set_language(parser, tree_sitter_zig());
   } else {
-    Napi::TypeError::New(env, "Unsupported language").ThrowAsJavaScriptException();
+    Napi::TypeError::New(env, "Unsupported language : " + languageId).ThrowAsJavaScriptException();
     return obj;
   }
 

@@ -13,6 +13,8 @@
         # tree-sitter-python
         "third-party/tree-sitter-python/src/parser.c",
         "third-party/tree-sitter-python/src/scanner.c",
+        # tree-sitter-zig
+        "third-party/tree-sitter-zig/src/parser.c",
         # my-code
         "jumpblock-impl.cc"
       ],

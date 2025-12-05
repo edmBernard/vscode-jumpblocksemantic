@@ -2,8 +2,8 @@
     "name": "jumpblocksemantic",
     "displayName": "JumpBlockSemantic",
     "description": "Shortcuts to jump through files by Semantic block. Faster navigation of functions and logical blocks. (support C++ and Python)",
-    "version": "0.0.1",
-    "publisher": "Erwan BERNARD",
+    "version": "0.0.2",
+    "publisher": "edmBernard",
     "author": {
         "name": "Erwan BERNARD"
     },
@@ -12,11 +12,11 @@
         "url": "https://github.com/edmBernard/vscode-jumpblocksemantic"
     },
     "engines": {
-        "vscode": "^1.5.0"
+        "vscode": "^1.8.0"
     },
     "dependencies": {
         "bindings": "~1.5.0",
-        "node-addon-api": "^7.0.0"
+        "node-addon-api": "^8.5.0"
     },
     "categories": [
         "Other"
@@ -44,10 +44,10 @@
         ]
     },
     "devDependencies": {
-        "@types/node": "^6.0.40",
+        "@types/node": "^24.10.1",
         "@types/vscode": "*",
-        "eslint": "^8.56.0",
-        "typescript": "^2.0.3"
+        "eslint": "^9.39.1",
+        "typescript": "^5.9.3"
     },
     "gypfile": true
 }
