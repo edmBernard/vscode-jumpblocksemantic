@@ -5,3 +5,9 @@ test/**
 jsconfig.json
 vsc-extension-quickstart.md
 .eslintrc.json
+third-party/**
+build/**
+!build/Release/jumpblock-impl.node
+binding.gyp
+jumpblock-impl.cc
+.gitmodules
